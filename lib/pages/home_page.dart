@@ -40,10 +40,10 @@ class _HomePageState extends State<HomePage> {
     });
   }
   void showresponse(String response){
-//    EmpList empList=Network.parseEmpList(response);
-    EmpCreate empCreate=Network.parseEmpCreate(response);
+   EmpList empList=Network.parseEmpList(response);
+    //EmpCreate empCreate=Network.parseEmpCreate(response);
    setState((){
-     item=empCreate.data as List<Employee>;
+     item=empList.data;
    });
    // print(empList.data.length);
   //  EmpOne empOne=Network.parseEmpone(response);
